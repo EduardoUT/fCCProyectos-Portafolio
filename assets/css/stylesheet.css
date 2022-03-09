@@ -1,0 +1,432 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --font-family: Segoe UI, sans-serif;
+    --font-color: white;
+    --background-color-secondary: rgb(42, 184, 184);
+    --backgroun-color-nav-hover: #08817f;
+    --background-color-projects-section: #7e3878;
+    --background-color-general: #0072B5;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background-color: var(--background-color-secondary);
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: inherit;
+    flex-direction: inherit;
+    height: inherit;
+    padding-left: 0;
+    margin-right: 20px;
+}
+
+#navbar ul li {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+#navbar ul li a {
+    display: inherit;
+    flex-direction: inherit;
+    text-decoration: none;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+#navbar ul li a:hover {
+    background-color: var(--background-color-general);
+}
+
+#main-content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(95, 81, 184);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), 
+    url("https://cdn.pixabay.com/photo/2021/10/19/17/55/soumaya-museum-6724229_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+}
+
+#welcome-section h6{
+    font-style: oblique;
+    font-weight: 200;
+    color: var(--background-color-secondary);
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1330px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0px 16.5px 0px 16.5px;
+}
+
+#projects #header-projects {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    border-bottom: solid 2px white;
+    min-width: 45%;
+    font-size: 20px;
+    padding: 10px 15px 10px;
+}
+
+/** 411.667×380 **/
+#projects .group-projects {
+    display: grid;
+    min-height: 380px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(409px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 35px;
+}
+
+#projects .group-projects .project-tile {
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 10px 15px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+#projects .group-projects .project-tile .link-projects {
+    text-decoration: none;
+}
+
+#projects .group-projects .project-tile .link-projects .title {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.link-projects .html-tags {
+    color: transparent;
+    top: 30px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.link-projects:hover .html-tags {
+    color: var(--background-color-secondary);
+}
+
+#projects .group-projects .project-tile .link-projects .image-container {
+    width: 100%;
+    height: 310px;
+    border-left: solid 2px black;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+}
+
+#projects .group-projects .project-tile .image-container .project-images {
+    height: inherit;
+    width: inherit;
+}
+
+#projects #view-more-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 190px;
+}
+
+#projects #view-more-btn .show-all {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: white;
+    transition: all 0.6s ease-out;
+    border-radius: 5px;
+    box-shadow: 10px 15px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+#projects #view-more-btn .show-all .animation-code {
+    display: flex;
+    font-size: 30px;
+    margin-left: 5px;
+    transition: all 0.3s ease-out;
+}
+
+#projects #view-more-btn .show-all:hover {
+    background-color: var(--background-color-secondary);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
+    
+}
+
+.show-all:hover .animation-code {
+    transform: translate(4.5px);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 98vh;
+    align-items: center;
+}
+
+#nav-footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#contact ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+#contact ul li {
+    padding-right: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+#contact ul li .links-footer {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    text-shadow: 1px 3px 4px rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease-out;
+}
+
+.links-footer:hover {
+    transform: translate(0, 4.5px);
+}
+
+#contact ul li .iconos-footer {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+#contact #text-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact #text-contact h1 {
+    font-size: 50px;
+}
+
+#contact #text-contact p {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: oblique;
+}
+
+
+#footer-copyrights {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: solid 3px var(--background-color-secondary);
+    height: 18vh;
+    min-height: 18vh;
+}
+
+#footer-copyrights #footer-container {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+#footer-copyrights #footer-container #info {
+    margin-right: 20px;
+}
+
+
+
+
+
+/** Pendiente: 
+    - Los botones del menú deben centrarse 
+    - Los links a los proyectos deben abrirse en una ventana diferente
+**/
+
+
+
+
+/** In this media query the grid will display
+in only two columns **/
+
+@media only screen and (max-width: 1092px) {
+    #projects {
+        padding: 0px 17.5px 0px 17.5px;
+    }
+
+    #projects .group-projects {
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    #header-projects {
+        min-width: 55%;
+    }
+
+    #nav-footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #link-5 {
+        grid-column: 1/5;
+    }
+
+    
+}
+
+
+/** In this media query the grid will dosplay in only
+one column **/
+@media only screen and (max-width: 731px) {
+    #projects .group-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 702px) {
+    #contact ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #link-4 {
+        grid-column: 1/2;
+        margin-left: 120px;
+    }
+
+    #link-5 {
+        grid-column: 2/3;
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    #contact ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #link-4 {
+        margin-left: 0px;
+        grid-column: 2/2;
+    }
+
+    #link-5 {
+        margin-left: 0px;
+        grid-column: 1/3;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    #navbar ul {
+        margin-right: 0px;
+    }
+
+    #footer-copyrights #footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-copyrights #footer-container #info {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    #link-3 {
+        grid-column: 1/3;
+    }
+
+    #link-4 {
+        grid-column: 1/3;
+    }
+}
