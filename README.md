@@ -12,7 +12,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 La temática de desarrollo de este proyecto era el desarrollo de un portafolio web personal, utilizando una metodología llamada, historias de usuario,
 en las cuales se pueden leer las opiniones o requerimientos que el cliente precisa para el desarrollo o estructuración de un proyecto.
 
-**Requerimientos: **
+**Requerimientos:**
 
     - Historia de usuario n.º 1: mi cartera debe tener una sección de bienvenida con una identificación de sección de bienvenida.
 
