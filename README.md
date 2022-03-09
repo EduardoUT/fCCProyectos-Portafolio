@@ -41,6 +41,10 @@ el objetivo.
 
 ![Herramienta de Prueba de Requerimientos](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-Portafolio/master/assets/img/readme/test.PNG)
 
+**Resultados de Pruebas:**
+
+![Resultado](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-Portafolio/master/assets/img/readme/results.PNG)
+
 **Vista Previa:**
 
 ![Vista Previa Portafolio Web](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-Portafolio/master/assets/img/readme/Portafolio_freeCodeCamp.PNG)
