@@ -34,3 +34,9 @@ en las cuales se pueden leer las opiniones o requerimientos que el cliente preci
     
 Para asegurarnos de cumplir con cada uno de los requerimientos antes mencionados, freeCodeCamp.org proporciona una herramienta que permite evaluar si se cumple con
 el objetivo.
+
+![Herramienta de Prueba de Requerimientos](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-Portafolio/master/assets/img/readme/test.PNG)
+
+**Vista Previa:**
+
+![Vista Previa Portafolio Web](https://raw.githubusercontent.com/EduardoUT/fCCProyectos-Portafolio/master/assets/img/readme/Portafolio_freeCodeCamp.PNG)
